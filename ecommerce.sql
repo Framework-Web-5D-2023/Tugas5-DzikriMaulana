@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 09, 2023 at 03:30 PM
+-- Generation Time: Nov 24, 2023 at 05:33 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -81,6 +81,14 @@ CREATE TABLE `order` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Dumping data for table `order`
+--
+
+INSERT INTO `order` (`id`, `id_product`, `nama`, `jumlah`, `alamat`, `jumlahbayar`) VALUES
+(43, 4, 'Kursi Kayu', 2, 'Jl. Lorem Ipsum updated', 3000000),
+(44, 5, 'Meja Makan', 2, 'Jl. Dolor Sit Amet', 5000000);
+
+--
 -- Indexes for dumped tables
 --
 
@@ -111,7 +119,7 @@ ALTER TABLE `detail`
 -- AUTO_INCREMENT for table `order`
 --
 ALTER TABLE `order`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- Constraints for dumped tables
